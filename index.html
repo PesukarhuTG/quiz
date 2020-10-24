@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quezee</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pass-test pass-test__content">
+        <button class="button pass-test__button button--primary">Пройти тест</button>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="quiz">
+        <div class="quiz__content">
+            <div class="quiz-head">
+                <a href="index.html" class="quiz-head__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <strong class="quiz-head__hint">Подкажем, какая уборка подходит для Вас</strong>
+            </div>
+            <div class="quiz-body">
+                <form action="#" method="post" class="form quiz-body__form">
+                    <!-- slide 01 -->
+                    <fieldset class="form__fieldset" style="display: block;">
+                        <div class="form__title">Ваша квартира после ремонта?</div>
+                        <div class="form__wrap">
+                            <label for="label-choise-yes_first" class="form__label-radio active-radio">
+                                <input type="radio" class="form__radio" name="choise-first" value="Да" id="label-choise-yes_first">
+                                <div class="form__choise">
+                                    <div class="form__image">
+                                        <img src="img/quiz_1.jpg" alt="quiz_1">
+                                    </div>
+                                </div>
+                                <div class="form__answer">Да</div>
+                            </label>
+                            <label for="label-choise-no_first" class="form__label-radio">
+                                <input type="radio" class="form__radio" name="choise-first" value="Нет" id="label-choise-no_first">
+                                <div class="form__choise">
+                                    <div class="form__image">
+                                        <img src="img/quiz_2.jpg" alt="quiz_2">
+                                    </div>
+                                </div>
+                                <div class="form__answer">Нет</div>
+                            </label>
+                        </div>
+                        <div class="form-button form-button__indent">
+                            <button class="button form-button__btn-next button--primary">Далее</button>
+                        </div>
+                    </fieldset>
+                    <!-- slide 02 -->
+                    <fieldset class="form__fieldset" style="display: none;">
+                        <div class="form-title">Укажите площадь Вашей квартиры/дома?</div>
+                        <div class="form__column">
+                            <div class="form__group active-checkbox">
+                                <input type="checkbox" name="user_check_1" id="check_1" class="form__input" value="менее 50 кв.м.">
+                                <label for="check_1" class="form__label-checkbox">менее 50 кв.м.</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" name="user_check_2" id="check_2" class="form__input" value="от 50 до 100 кв.м.">
+                                <label for="check_2" class="form__label-checkbox">от 50 до 100 кв.м.</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="checkbox" name="user_check_3" id="check_3" class="form__input" value="более 100 кв.м.">
+                                <label for="check_3" class="form__label-checkbox">более 100 кв.м.</label>
+                            </div>
+                        </div>
+                        <div class="form-button form-button__indent">
+                            <button class="form-button__btn-prev"></button>
+                            <button class="button form-button__btn-next button--primary">Далее</button>
+                        </div>
+                    </fieldset>
+                    <!-- slide 03 -->
+                    <fieldset class="form__fieldset" style="display: none;">
+                    </fieldset>
+                    <!-- slide 04 -->
+                    <fieldset class="form__fieldset" style="display: none;">
+                    </fieldset>
+                    <!-- slide 05 -->
+                    <fieldset class="form__fieldset" style="display: none;">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="quiz-position">
+                <div class="quiz-position__bg">
+                    <span class="quiz-position__on">Тест пройден на</span>
+                    <div class="quiz-position__percent">
+                        <span id="quiz-position__percent-change">25</span>%
+                    </div>
+                    <span class="quiz-position__find-out">Узнайте, какая 
+                        скидка ждет вас в&nbsp;конце теста!</span>
+                    <div class="quiz-position__image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
