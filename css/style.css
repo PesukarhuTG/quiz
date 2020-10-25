@@ -127,7 +127,7 @@ button {
 
 .form__title {
     font-weight: bold;
-    font-style: 20px;
+    font-size: 20px;
     line-height: 27px;
     color: #595354;
     margin-bottom: 30px;
@@ -165,7 +165,7 @@ button {
 
 .form__answer {
     font-weight: bold;
-    font-style: 18px;
+    font-size: 18px;
     line-height: 25px;
     text-align: center;
     color: #595354;
