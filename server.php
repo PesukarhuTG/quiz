@@ -1,3 +1,6 @@
 <?php 
 
-echo $_SERVER[‘REMOTE_ADDR‘];
+echo json_encode([ 
+  "status" => "ok",
+  "message" => "Все ok!"
+]);
