@@ -123,6 +123,12 @@ document.addEventListener('DOMContentLoaded', function () {
             answersObj.step4.email = document.getElementById('quiz-email').value;
             answersObj.step4.call = document.getElementById('quiz-call').value;
 
+    //         for (let key in answersObj.step4) {
+    //     if (answersObj.step4[key].value === "") {
+    //       alert("Введите даные во все поля");
+    //     }
+    //   }
+
 
             if (document.getElementById('quiz-policy').checked === true) {
                 postData(answersObj)
@@ -159,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     passTestButton.addEventListener('click', () => {
 
+        //сбрасываем предыдущие значения при поаторном запуске теста
         formItems.forEach((formItem, formItemIndex) => {
             if (formItemIndex === 0) {
                 formItem.style.display = "block";
